@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+body{
+    background-color: #442220;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.hello{
+   
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+   height:60vmin;
+   width: 60vmin;
+display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap:1rem;
+
+    
+}
+.block{
+    height:18vmin;
+    width:18vmin;
+    background-color:#B0CA87;
+    border: none;
+    box-shadow:  0 0 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem;
+    color: #860c1e;
+    font-weight: 500;
+    font-size: 7vmin;
+
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+.block:hover{
+   background-color: aliceblue; 
+   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5) ;
+}
+.block:active{
+    background-color:rgb(240,248,255,0.5) ;
+}
+h1{
+    color: rgb(215, 217, 212);
+    font-size: 100px;
+    font-family: C
+    
+}
+#replay{
+
+   background-color: rgb(238, 241, 167);
+    
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:  "Orbitron", sans-serif;
+    border: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+#replay:hover{
+    background-color: rgb(198, 247, 247);
+}
+#replay:active{
+    background-color: rgb(244, 255, 255);
+}
+#New-Game{
+
+    background-color: rgb(238, 241, 167);
+     
+     padding: 0.7rem;
+     border-radius: 1rem;
+     font-size: 25px;
+     font-weight: bolder;
+     font-family:  "Orbitron", sans-serif;
+     border: none;
+     transition: background-color 0.5s ease, color 0.5s ease;
+ 
+ }
+ #New-Game:hover{
+     background-color: rgb(198, 247, 247);
+ }
+ #New-Game:active{
+     background-color: rgb(244, 255, 255);
+ }
+
+#Winner{
+    color: #e3e39f;
+   
+   font-size: 70px;
+   font-weight: 800;
+   background-color: #442220;
+   border: none;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.msgcontainer{
+    height: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hide{
+    display: none;
+  }
+  

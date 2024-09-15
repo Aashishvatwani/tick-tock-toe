@@ -1,0 +1,16 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+/* Apply background image to the body */
+body {
+    background-image: url('backgroundimage.jpg');
+    background-size: cover;    /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color:aliceblue;
+}
