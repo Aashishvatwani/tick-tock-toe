@@ -3,14 +3,307 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-
+    background-color: #121212; 
+    font-family: 'Poppins', sans-serif; 
 }
 
-/* Apply background image to the body */
+
 body {
-    background-image: url('backgroundimage.jpg');
-    background-size: cover;    /* Ensures the image covers the whole area */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color:aliceblue;
+    background-image: url('Backgroundimage.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+#heading {
+    margin: 0;
+    padding: 70px 0;
+    text-align: center;
+    font-size: 19vmin; 
+    font-family: "Ribeye Marrow", serif;
+    font-weight: 900; 
+    color: #00FFFF; 
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.9) 0%, rgba(45, 45, 45, 0.9) 100%);
+    text-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF, 0 0 45px #00FFFF, 0 0 60px #00FFFF; 
+    border-bottom: 6px solid #00FFFF; 
+    letter-spacing: 3px; 
+   
+   transition: text-shadow 0.5s ease-in-out;
+}
+
+#heading:hover {
+    text-shadow: 0 0 25px #00FFFF, 0 0 40px #00FFFF, 0 0 60px #00FFFF, 0 0 80px #00FFFF; 
+    font-size: 19vmin; 
+}
+
+
+
+
+
+
+#container {
+    height: 200vh;
+    background: linear-gradient(135deg, #1F1C2C 0%, #928DAB 100%);
+    color: #FFFFFF; 
+    padding: 20px;
+}
+
+
+#game-select-div {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Game-select {
+    padding: 25px 35px;
+    background-color: #1F2A44;
+    border-radius: 40px;
+    color: #00FFFF; 
+    border: 2px solid #00FFFF; 
+    font-size: 5vmin;
+    font-weight: 600;
+    font-family: 'Cambria', serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); 
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    margin-bottom: 200px;
+}
+
+
+#Game-select:hover {
+    transform: scale(1.1);
+    background-color: #2E3B55; 
+    color: #FFFFFF; 
+    border-color: #00FFFF; 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); 
+}
+
+#Game-select:active {
+    transform: scale(1.05);
+    background-color: #162039; 
+    color: #FFFFFF; 
+    border-color: #00FFFF; 
+}
+
+#selectone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sgid {
+    padding: 30px 60px; 
+    border-radius: 50px;
+    background-color: #1F2A44;
+    color: #00FFFF;
+    font-weight: 900; 
+    font-size: 6vmin; 
+    border: 5px solid #00FFFF; 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+
+#sgid:hover {
+    transform: scale(1.15);
+    background-color: #2E3B55; 
+    color: #FFFFFF; 
+    border-color: #00FFFF; 
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.9); 
+}
+#sgid:active {
+    transform: scale(1.1); 
+    background-color: #162039; 
+    color: #FFFFFF;
+    border-color: #00FFFF; 
+}
+
+.Games {
+    height: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    gap: 20px; 
+    padding: 20px;
+    overflow-x: auto; 
+}
+
+.gamer {
+    height: 500px;
+    width: 450px;
+    background-color: #2E3B55;
+    opacity: 1;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4e06f; /* Adjust text color */
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+    /* Add text-shadow to make it stand out */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 
+                 0 0 15px rgba(255, 255, 255, 0.6); 
+
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+
+.gamer:hover {
+    transform: scale(1.05);
+    background-color: #3A4A6C; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.gamer:active {
+    transform: scale(0.98);
+    background-color: #1E2A40;
+}
+#footer {
+    background-color: #1F2A44; 
+    color: #FFFFFF;
+    padding: 40px 0; 
+    text-align: center; 
+    font-family: 'Poppins', sans-serif; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links a {
+    color: #00FFFF; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px; 
+}
+
+.footer-social a img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1); 
+}
+#Tick-Tac-Toe {
+    position: relative; /* Correct the spelling */
+    z-index: 1;
+}
+
+#Tick-Tac-Toe::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('t-t-t.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust the opacity here */
+    z-index: -1; /* Ensures it stays behind the content */
+    height: 100%; /* Ensures it covers the parent div */
+    width: 100%; /* Ensures it covers the parent div */
+    border-radius: 10px;
+}
+#Tower-of-Hanoi {
+    position: relative; /* Correct the spelling */
+    z-index: 1;
+}
+
+#Tower-of-Hanoi::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('t-o-h.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust the opacity here */
+    z-index: -1; /* Ensures it stays behind the content */
+    height: 100%; /* Ensures it covers the parent div */
+    width: 100%; 
+    /* Ensures it covers the parent div */
+    border-radius: 10px;
+}
+#Paper-Wordle {
+    position: relative; /* Correct the spelling */
+    z-index: 1;
+}
+
+#Paper-Wordle::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('p-w.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4; /* Adjust the opacity here */
+    z-index: -1; /* Ensures it stays behind the content */
+    height: 100%; /* Ensures it covers the parent div */
+    width: 100%; 
+    /* Ensures it covers the parent div */
+    border-radius: 10px;
+}
+#You-are-Not-Robo {
+    position: relative; /* Correct the spelling */
+    z-index: 1;
+}
+
+#You-are-Not-Robo::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('recaptcha_examples.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4; /* Adjust the opacity here */
+    z-index: -1; /* Ensures it stays behind the content */
+    height: 100%; /* Ensures it covers the parent div */
+    width: 100%; 
+    /* Ensures it covers the parent div */
+    border-radius: 10px;
 }

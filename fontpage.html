@@ -3,27 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mind boosting Club </title>
+    <title>Mind Boosting Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="frontpage.css">
 </head>
 <body>
-  
+ 
     <h1 id="heading">Welcome to the journey of mind mapping game</h1>
-    <button id="Game select">Click here to go to Games page </button>
-    <h1>Select Game</h1>
-    <div>
-    <div class="Games">
-    <div id="Tick-Tac-Toe"> Tick-Toc-Toe</div>
-    <div id="Tower-of-Hanoi">Tower of Hanoi</div>
-    <div id="Paper-Wordle">Word Hunter</div>
-    <div id="You-are-Not-Robo">You are Not Robo</div>
+    <div id="container">
+        <div id="game-select-div">
+            <button id="Game-select" onclick="showGames()">Click here to go to Games page</button>
+        </div>
+        <div id="selectone">
+            <button id="sgid">Select Game</button>
+        </div>
+        <div id="gaming" class="hide">
+            <div class="Games">
+                <div id="Tick-Tac-Toe" class="gamer">Tick-Toc-Toe</div>
+                <div id="Tower-of-Hanoi" class="gamer">Tower of Hanoi</div>
+                <div id="Paper-Wordle" class="gamer">Word Hunter</div>
+                <div id="You-are-Not-Robo" class="gamer">You are Not Robo</div>
+            </div>
+        </div>
     </div>
-</div>
-    <ul>
-        <div id="Select">Select one</div>
-        <li>X</li>
-        <li>O</li>
-    </ul>
 
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 YourWebsiteName. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="linkedin.png" alt="Linkin"></a>
+                <a href="#"><img src="github-6980894_960_720.webp" alt="Git-Hub"></a>
+                <a href="#"><img src="instagram.webp" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showGames() {
+            document.getElementById('gaming').classList.toggle('hide');
+        }
+    </script>
 </body>
 </html>

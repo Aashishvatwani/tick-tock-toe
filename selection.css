@@ -1,0 +1,14 @@
+body{
+    margin:0%;
+    padding: 0%;
+    background-color: rgb(237, 216, 189);
+
+}
+#heading{
+    height: 40vh;
+    text-align: center;
+    font-size: 15vmin;
+    font-weight: 700;
+    
+    background-color: brown;
+}
